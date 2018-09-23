@@ -1,5 +1,7 @@
-#Python Shell
-##OS
+# Python Shell
+
+## OS
+
 ```python
 import os
 cwd = os.getcwd()
@@ -10,7 +12,9 @@ os.listdir()
 os.chdir(cwd)
 os.system()
 ```
+
 ## xml
+
 ```python
 try:
     import xml.etree.cElementTree as ET
@@ -25,8 +29,10 @@ message = ''.join(tree.find('Message').itertext())
 
 > Successfully downloaded S_D_xxxxx_20161129.txt.gz
 
-##gzip
+## gzip
+
 dynamicly open gzip file or normal file
+
 ```python
 open_method = gzip.open if file_name.endswith('gz') else open
 f = open_method(file_path, 'rb')
